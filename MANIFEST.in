@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include qp_payroll *.css
+recursive-include qp_payroll *.csv
+recursive-include qp_payroll *.html
+recursive-include qp_payroll *.ico
+recursive-include qp_payroll *.js
+recursive-include qp_payroll *.json
+recursive-include qp_payroll *.md
+recursive-include qp_payroll *.png
+recursive-include qp_payroll *.py
+recursive-include qp_payroll *.svg
+recursive-include qp_payroll *.txt
+recursive-exclude qp_payroll *.pyc
