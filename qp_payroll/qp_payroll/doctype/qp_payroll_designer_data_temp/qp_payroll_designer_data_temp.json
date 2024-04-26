@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "creation": "2024-04-17 20:22:27.967857",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "temporal_lot",
+  "document_type",
+  "document_number",
+  "item",
+  "date",
+  "account",
+  "nit",
+  "check_number",
+  "debit_value",
+  "credit_value",
+  "concept",
+  "withholding_base",
+  "cost_center",
+  "book"
+ ],
+ "fields": [
+  {
+   "fieldname": "temporal_lot",
+   "fieldtype": "Data",
+   "label": "Temporal Lot"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "label": "Document Type"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document NUmber"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "Account"
+  },
+  {
+   "fieldname": "nit",
+   "fieldtype": "Data",
+   "label": "Nit"
+  },
+  {
+   "fieldname": "check_number",
+   "fieldtype": "Data",
+   "label": "Check Number"
+  },
+  {
+   "fieldname": "debit_value",
+   "fieldtype": "Data",
+   "label": "Debit Value"
+  },
+  {
+   "fieldname": "credit_value",
+   "fieldtype": "Data",
+   "label": "Credit Value"
+  },
+  {
+   "fieldname": "concept",
+   "fieldtype": "Data",
+   "label": "Concept"
+  },
+  {
+   "fieldname": "withholding_base",
+   "fieldtype": "Data",
+   "label": "Withholding Base"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Data",
+   "label": "Book"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-17 20:48:41.560617",
+ "modified_by": "Administrator",
+ "module": "Qp Payroll",
+ "name": "Qp_Payroll_Designer_Data_Temp",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
