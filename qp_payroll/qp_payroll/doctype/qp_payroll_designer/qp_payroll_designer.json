@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "autoname": "PAYROLL.#####",
+ "creation": "2024-04-14 21:31:29.431952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payroll_file",
+  "status",
+  "import_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "payroll_file",
+   "fieldtype": "Attach",
+   "label": "Payroll File",
+   "read_only_depends_on": "eval:(doc.status=='Completed')",
+   "reqd": 1
+  },
+  {
+   "default": "Starting",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Starting\nFailed\nActive\nCompleted",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "import_list",
+   "fieldtype": "Table",
+   "label": "Import List",
+   "options": "Qp_Payroll_Designer_File_Status",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-18 19:37:33.288309",
+ "modified_by": "Administrator",
+ "module": "Qp Payroll",
+ "name": "Qp_Payroll_Designer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
