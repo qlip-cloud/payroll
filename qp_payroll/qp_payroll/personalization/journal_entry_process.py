@@ -74,7 +74,7 @@ def new_account_entries(doc, index, row):
         return True, f"La cuenta no existe - {exc_account}", None
 
     try:
-        customer = frappe.get_last_doc("Customer", filters={"tax_id":row.nit})
+        customer = frappe.get_last_doc("Supplier", filters={"tax_id":row.nit})
     except frappe.exceptions.DoesNotExistError as exc_customer:
         frappe.log_error(message=frappe.get_traceback(), title="journal_entry_process")
         frappe.db.rollback()
@@ -106,7 +106,7 @@ def new_account_entries(doc, index, row):
     return False, None, {
         "account": account.name,
         "party_type": CONST_PARTY_TYPE,
-        "party": customer.name,
+        "party": customer.supplier_name,
         "cost_center": cost_center.name,
         "debit_in_account_currency": float(row.debit_value),
         "credit_in_account_currency": float(row.credit_value)
